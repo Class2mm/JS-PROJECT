@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgba(red, green, blue, alpha) 0 0 0 0.7;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-shadow: 1px 1px 5px black;
+            justify-content: space-between;
+            /*this is used to give spacing between nav bar content and the login btn*/
+
+        }
+
+        .nav-con {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style-type: none;
+            color: white;
+        }
+
+        .nav-con a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-con a:hover {
+            text-shadow: 5px 5px 10px black;
+            
+        }
+
+        .front-img {
+            background-image: url(Front-Page.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0px 20px;
+            color: white;
+        }
+
+        .front-img h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .front-img p {
+            font-size: 1.5rem;
+            padding: 20px;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .front-img button {
+            padding: 10px;
+            border: none;
+            box-shadow: 1px 1px 4px;
+            border-radius: 16px;
+        }
+
+        .front-img button:hover {
+            box-shadow: 2px 2px 6px black;
+            background-color: #8a8989;
+            color: white;
+            text-shadow: 6px 6px 10px black;
+        }
+
+        .ord-on {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+
+        .ord-on:hover {
+            box-shadow: 6px 6px 10px black;
+            border-radius: 16px;
+        }
+
+        .log-btn button {
+            padding: 3px;
+            width: 75px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 2px 2px 6px black;
+        }
+
+        .log-btn button:hover {
+            box-shadow: 6px 6px 10px black;
+            background-color: #8a8989;
+            color: white;
+        }
+
+        .chat-btn {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            box-shadow: 2px 2px 6px black;
+            border-radius: 16px;
+        }
+
+        .cart-logo .cart-btn {
+            position: absolute;
+            right: 10rem;
+            top: 10px;
+            background-color: white;
+            width: 110px;
+            border-radius: 26px;
+            border: none;
+        }
+
+        .cart-btn img {
+            margin: 0 38px 0 0;
+            padding: 5px;
+        }
+
+        .img-cntnr {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .img-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .all-img {
+            border: 1px solid black;
+            margin: 10px;
+            width: fit-content;
+            height: auto;
+            border-radius: 5px;
+            padding: 10px 10px 50px 10px;
+            background-color: beige;
+
+            transition: 0.3s;
+        }
+
+        .all-img:hover {
+            transform: scale(1.05) rotate(-2deg);
+            box-shadow: 2px 2px 5px gray;
+        }
+
+        .all-img img {
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-wrapper button {
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            /* background-color: ; */
+            box-shadow: 2px 2px 5px gray;
+            transition: 0.3s;
+        }
+
+        .btn-wrapper button:hover {
+            background-color: #8a8989;
+            transform: scale(1.06);
+            box-shadow: 4px 4px 6px black;
+            color: white;
+        }
+        .btn-wrapper button:active{
+            box-shadow: 0 3px ;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-con">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us </a></li>
+        </div>
+        <div class="log-btn" id="lg-btn">
+            <button>Login</button>
+        </div>
+    </div>
+    <div class="front-img">
+        <H1>Welcome to coozzy Cafe</H1>
+        <p>Freshs Coffee,Warm Atmosphere,Great Company</p>
+        <button>Explore Menu</button>
+        <div class="ord-on">
+            <button>Order online</button>
+        </div>
+        <div class="chat-btn"><button>Let's chat</button></div>
+    </div>
+    <!-- 2nd page -->
+
+    <div class="img-cntnr">
+        <div class="img-wrapper">
+            <div class="all-img">
+                <img src="coffee-1.jpg" alt="cf-1">
+                <div class="btn-wrapper">
+                    <button>Shop now</button>
+                </div>
+            </div>
+            <div class="all-img">
+                <img src="coffee-2.png  " alt="cf-2">
+                <div class="btn-wrapper">
+                    <button>Shop now</button>
+                </div>
+            </div>
+            <div class="all-img">
+                <img src="coffee-3.jpg" alt="cf-3">
+                <div class="btn-wrapper">
+                    <button>Shop now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cafe.js">
+        const loginBtn = document.getElementById(`lg-btn`);
+
+loginBtn.addEventListener(`click`,function(){
+    window.location.assign(`login page.html`)
+})
+    </script>
+</body>
+
+</html>

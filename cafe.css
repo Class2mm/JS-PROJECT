@@ -1,0 +1,119 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgba(red, green, blue, alpha) 0 0 0 0.7;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            text-shadow: 1px 1px 5px black;
+            justify-content: space-between;
+            /*this is used to give spacing between nav bar content and the login btn*/
+
+        }
+
+        .nav-con {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style-type: none;
+            color: white;
+        }
+
+        .nav-con a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-con a:hover {
+            text-shadow: 5px 5px 10px black;
+            /* background-color: aquamarine; */
+        }
+
+        .front-img {
+            background-image: url(Front-Page.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 0px 20px;
+            color: white;
+        }
+
+        .front-img h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .front-img p {
+            font-size: 1.5rem;
+            padding: 20px;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .front-img button {
+            padding: 10px;
+            border: none;
+            box-shadow: 1px 1px 4px;
+            border-radius: 16px;
+        }
+
+        .front-img button:hover {
+            box-shadow: 2px 2px 6px black;
+            background-color: #8a8989;
+            color: white;
+            text-shadow: 6px 6px 10px black;
+        }
+
+        .ord-on {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+        }
+
+        .ord-on:hover {
+            box-shadow: 6px 6px 10px black;
+            border-radius: 16px;
+        }
+
+        .log-btn button {
+            padding: 3px;
+            width: 75px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 2px 2px 6px black;
+        }
+
+        .log-btn button:hover {
+            box-shadow: 6px 6px 10px black;
+            background-color: #8a8989;
+            color: white;
+        }
+        .chat-btn{
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            box-shadow: 2px 2px 6px black;
+            border-radius: 16px;
+        }

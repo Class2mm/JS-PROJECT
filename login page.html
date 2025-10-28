@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: cursive;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image:url(Front-Page.jpg);
+        }
+        .login-cntnr{
+            width: 35%;
+            height: 81vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 45px;    
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            margin-left: 15px;
+        }
+        .headings{
+            display: flex;
+            flex-direction: column;
+        }
+        .headings input{
+            padding: 10px;
+            border-radius: 16px;
+            border: 1px solid black;
+            margin: 1px;
+            width: 18rem;
+        }
+        .btn-grp{
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+        }
+        .headings button{
+            border-radius: 10px;
+            width: 7rem;
+            margin: 5px;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            border: none;
+            box-shadow: 9px 4px 8px black;
+        }
+        .btn-grp .sbmt-btn{
+            background-color: #e1e192;
+        }
+        .btn-grp .sbmt-btn:hover{
+            background-color:rgb(155, 105, 39);
+            color: white;
+            box-shadow: 6px 4px 5px black;
+        }
+        .sign-up-btn{
+            background-color:#ed5500 ;
+            color: white;
+        }
+        .btn-grp .sign-up-btn:hover{
+            background-color: #8a8989;
+            color: black;
+            box-shadow: 6px 4px 5px black;
+        }
+        .fgt-btn{
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .fgt-btn a{
+            text-decoration: none;
+        }
+        .fgt-btn a:hover{
+            color: rgb(23, 20, 26);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-cntnr">
+        <div class="headings">
+            <input type="email" id="email-area" placeholder="E-mail">
+            <input type="password" id="pass-area" placeholder="password">
+            <div class="btn-grp">
+                <button class="sbmt-btn">Log in</button>
+                <button class="sign-up-btn">Sign up</button>
+            </div>
+            <div class="fgt-btn">
+                <a href="#">Forget password?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
